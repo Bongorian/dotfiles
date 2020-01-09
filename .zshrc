@@ -226,13 +226,3 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 plugins=(… zsh-completions)
 autoload -U compinit && compinit
-
-export PATH=$PATH:~/bongorian/.local/bin
-
-export PATH="/home/bongorian/.pyenv/bin:$PATH"
-eval "$(pyenv init - zsh --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
-
-export IDF_PATH="~/esp/esp-idf"
-export PATH="$PATH:`yarn global bin`"
-export PATH="$PATH:/home/bongorian/dev/flutter/bin"
